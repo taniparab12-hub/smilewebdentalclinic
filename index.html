@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SmileWeb Dental Clinic</title>
+<link rel="stylesheet" href="style.css">
+</head><body>
+<section class="hero">
+<img class="logo" src="assets/logo.jpeg">
+<div>
+<h1>SmileWeb Dental Clinic</h1>
+<p>Healthy Smiles Begin Here</p>
+<a class="btn" href="tel:+918010691347">Call Now</a>
+<a class="btn wa" href="https://wa.me/918010691347" target="_blank">WhatsApp</a>
+<a class="btn" href="https://maps.app.goo.gl/Pwnk1z9pyyDWvEMc7" target="_blank">Directions</a>
+</div>
+<img class="doctor" src="assets/doctor.jpeg">
+</section>
+
+<section class="about">
+<img src="assets/clinic-exterior.jpeg">
+<div><h2>Dr. Tanishka Savlo Parab (Naik)</h2><p>BDS (GDCH Goa)</p></div>
+</section>
+
+<section>
+<h2>Appointment Request</h2>
+<form id="appointmentForm">
+<input id="name" placeholder="Patient Name" required>
+<input id="phone" placeholder="Phone Number" required>
+<select id="treatment">
+<option>Dental Checkup</option><option>Teeth Cleaning</option>
+<option>Root Canal Treatment</option><option>Other</option>
+</select>
+<input id="otherTreatment" placeholder="Specify treatment" style="display:none">
+<textarea id="notes" placeholder="Notes"></textarea>
+<button type="submit">Send via WhatsApp</button>
+</form>
+</section>
+<script src="script.js"></script>
+</body></html>
