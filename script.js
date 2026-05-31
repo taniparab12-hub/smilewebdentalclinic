@@ -34,21 +34,21 @@ appointmentForm.addEventListener('submit', e => {
     e.preventDefault();
 
     const treatment = treatmentSelect.value === 'Other' ? otherTreatmentInput.value.trim() : treatmentSelect.value;
-    const message = `🦷 *New Appointment Request*
+    const message = ` *New Appointment Request*
 
 Hello Doctor,
 
 My name is ${nameInput.value.trim()}.
 
-👤 Age: ${ageInput.value.trim()}
-👥 Gender: ${genderInput.value.trim()}
+ Age: ${ageInput.value.trim()}
+ Gender: ${genderInput.value.trim()}
 
 I would like to book an appointment regarding *${treatment || 'General Checkup'}*.
 
-📞 Phone Number:
+ Phone Number:
 ${phoneInput.value.trim()}
 
-📝 Additional Notes:
+ Additional Notes:
 ${notesInput.value.trim() || 'None'}
 
 Kindly contact me to confirm an appointment.
