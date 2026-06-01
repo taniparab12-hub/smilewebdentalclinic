@@ -67,12 +67,12 @@
 
         <div class="header-actions">
             <div class="social-links">
-                <a href="https://www.instagram.com/smilewebdentalclinic?igsh=MTQxbjd1bWl0eTNpZg==" target="_blank" rel="noopener" aria-label="SmileWeb Instagram">
+                <a class="social-link instagram" href="https://www.instagram.com/smilewebdentalclinic?igsh=MTQxbjd1bWl0eTNpZg==" target="_blank" rel="noopener" aria-label="SmileWeb Instagram">
                     <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.5A4.5 4.5 0 1 0 16.5 13 4.505 4.505 0 0 0 12 8.5zm5.5-2.9a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1z"/>
                     </svg>
                 </a>
-                <a href="https://www.facebook.com/share/1Cm5MvLd5S/" target="_blank" rel="noopener" aria-label="SmileWeb Facebook">
+                <a class="social-link facebook" href="https://www.facebook.com/share/1Cm5MvLd5S/" target="_blank" rel="noopener" aria-label="SmileWeb Facebook">
                     <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8.5v-3h2V9.2c0-2 1.2-3.1 3-3.1.9 0 1.8.2 1.8.2v2h-1c-1 0-1.3.6-1.3 1.2V12h2.2l-.3 3h-1.9v7A10 10 0 0 0 22 12z"/>
                     </svg>
@@ -187,8 +187,6 @@
             </div>
         </section>
 
-        <section class="location-section" id="location">
-            <div class="section-heading">
                 <p class="section-eyebrow">Clinic Location</p>
                 <h2>Find SmileWeb Dental Clinic</h2>
             </div>
@@ -213,13 +211,29 @@
                             <a class="btn btn-secondary" href="https://maps.app.goo.gl/Pwnk1z9pyyDWvEMc7" target="_blank">Open in Maps</a>
                         </div>
                         <div class="location-gallery">
-                            <article class="photo-card">
+                            <!-- <article class="photo-card">
                                 <img src="assets/clinic-exterior.jpeg" alt="Clinic exterior">
                                 <h3>Clinic Exterior</h3>
-                            </article>
-                            <article class="photo-card">
+                            </article> -->
+                            <!-- <article class="photo-card">
                                 <img src="assets/interior.png" alt="Clinic interior">
                                 <h3>Clinic Interior</h3>
+                            </article> -->
+                            <article class="photo-card">
+                                <img src="assets/clinic-reception.jpeg" alt="Reception area">
+                                <h3>Clinic Interior</h3>
+                            </article>
+                            <article class="photo-card">
+                                <img src="assets/clinic-waiting-area.jpeg" alt="Waiting area">
+                                <h3>Clinic Interior</h3>
+                            </article>
+                            <article class="photo-card">
+                                <img src="assets/treatment-room.jpeg" alt="Treatment room">
+                                <h3>Reception Area</h3>
+                            </article>
+                            <article class="photo-card">
+                                <img src="assets/dental-equipment.jpeg" alt="Dental equipment">
+                                <h3>Clinic Exterior</h3>
                             </article>
                         </div>
                     </div>
@@ -323,18 +337,66 @@
                 <button type="submit" class="btn btn-primary">Send via WhatsApp</button>
             </form>
         </section>
+
+        <section class="testimonials-section" id="testimonials">
+            <div class="section-heading">
+                <p class="section-eyebrow">Testimonials</p>
+                <h2>Patient Experiences</h2>
+            </div>
+
+            <div class="testimonials-grid">
+                <article class="testimonial-card">
+                    <p>“I had a dental treatment at this clinic and the experience was excellent. The doctor was very professional, friendly, and made me feel comfortable throughout the procedure. The treatment was completely painless and done with great care. Highly recommended for anyone looking for quality dental care.”</p>
+                    <p class="testimonial-author">— Karishma Naik</p>
+                </article>
+                <article class="testimonial-card">
+                    <p>I visited the clinic for a regular dental check-up, and during the examination, the doctor identified a hidden cavity that could have become a serious problem in the future if left untreated. I truly appreciate the doctor’s careful diagnosis and early advice, which helped detect the issue at the right time. The treatment was smooth, painless, and handled very professionally. Highly recommended for quality dental care.</p>
+                    <p class="testimonial-author">— Gauresh Naik</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="faq-section" id="faqs">
+            <div class="section-heading">
+                <p class="section-eyebrow">FAQs</p>
+                <h2>Frequently Asked Dental Questions</h2>
+            </div>
+
+            <div class="faq-grid">
+                <article class="faq-card">
+                    <h3>How often should I visit the dentist?</h3>
+                    <p>We recommend a checkup every 6 months, or more frequently if you have pain, sensitivity, or ongoing treatment needs.</p>
+                </article>
+                <article class="faq-card">
+                    <h3>Is teeth whitening safe?</h3>
+                    <p>Yes. Professional whitening under a dentist’s care is safe and effective, and we always evaluate your teeth first.</p>
+                </article>
+                <article class="faq-card">
+                    <h3>Can I get a root canal without pain?</h3>
+                    <p>Modern root canal treatment is designed to be comfortable, using local anesthesia and careful techniques to minimize discomfort.</p>
+                </article>
+                <article class="faq-card">
+                    <h3>Do you treat children?</h3>
+                    <p>Yes, we offer pediatric dentistry with gentle care tailored for kids and families.</p>
+                </article>
+                <article class="faq-card">
+                    <h3>How do I book an appointment?</h3>
+                    <p>You can call us, message via WhatsApp, or use the appointment form on this page for a quick response.</p>
+                </article>
+            </div>
+        </section>
     </main>
 
     <footer class="site-footer">
         <div style="display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;">
             <p style="margin:0;">&copy; 2026 SmileWeb Dental Clinic. Trusted dental care in Goa.</p>
             <div class="social-links">
-                <a href="https://www.instagram.com/smilewebdentalclinic?igsh=MTQxbjd1bWl0eTNpZg==" target="_blank" rel="noopener" aria-label="SmileWeb Instagram">
+                <a class="social-link instagram" href="https://www.instagram.com/smilewebdentalclinic?igsh=MTQxbjd1bWl0eTNpZg==" target="_blank" rel="noopener" aria-label="SmileWeb Instagram">
                     <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.5A4.5 4.5 0 1 0 16.5 13 4.505 4.505 0 0 0 12 8.5zm5.5-2.9a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1z"/>
                     </svg>
                 </a>
-                <a href="https://www.facebook.com/share/1Cm5MvLd5S/" target="_blank" rel="noopener" aria-label="SmileWeb Facebook">
+                <a class="social-link facebook" href="https://www.facebook.com/share/1Cm5MvLd5S/" target="_blank" rel="noopener" aria-label="SmileWeb Facebook">
                     <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8.5v-3h2V9.2c0-2 1.2-3.1 3-3.1.9 0 1.8.2 1.8.2v2h-1c-1 0-1.3.6-1.3 1.2V12h2.2l-.3 3h-1.9v7A10 10 0 0 0 22 12z"/>
                     </svg>

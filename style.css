@@ -205,17 +205,27 @@ main,
     transition: background-color 0.15s ease, transform 0.12s ease, color 0.15s ease;
 }
 
-.social-links a:hover {
-    background: var(--accent);
-    color: #fff;
-    transform: translateY(-2px);
-}
+    .social-links a.instagram,
+    .social-strip a[href*="instagram.com"] {
+        color: #E1306C;
+    }
 
-.social-icon {
-    width: 20px;
-    height: 20px;
-    display: block;
-}
+    .social-links a.facebook,
+    .social-strip a[href*="facebook.com"] {
+        color: #1877F2;
+    }
+
+    .social-links a:hover,
+    .social-strip a:hover {
+        background: var(--accent);
+        color: #fff;
+        transform: translateY(-2px);
+    }
+
+    .social-links svg,
+    .social-strip svg {
+        fill: currentColor;
+    }
 
 .btn {
     display: inline-flex;
@@ -438,6 +448,66 @@ main {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 22px;
+}
+
+.faq-section {
+    padding: 44px 0;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.faq-card {
+    padding: 28px;
+    border-radius: 28px;
+    background: #ffffff;
+    border: 1px solid rgba(13, 45, 95, 0.08);
+    box-shadow: 0 20px 40px rgba(13, 45, 95, 0.05);
+}
+
+.faq-card h3 {
+    margin: 0 0 12px;
+    font-size: 1.2rem;
+    color: var(--accent-dark);
+}
+
+.faq-card p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.testimonials-section {
+    padding: 44px 0;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.testimonial-card {
+    padding: 28px;
+    border-radius: 28px;
+    background: #ffffff;
+    border: 1px solid rgba(13, 45, 95, 0.08);
+    box-shadow: 0 20px 40px rgba(13, 45, 95, 0.05);
+}
+
+.testimonial-card p {
+    margin: 0 0 16px;
+    color: var(--muted);
+    line-height: 1.75;
+}
+
+.testimonial-author {
+    margin: 0;
+    font-weight: 700;
+    color: var(--accent-dark);
 }
 
 .service-card {
@@ -719,6 +789,7 @@ textarea {
     .hero,
     .appointment,
     .service-grid,
+    .testimonials-grid,
     .location-content {
         grid-template-columns: 1fr;
     }
@@ -751,6 +822,10 @@ textarea {
     }
 
     .location-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-grid {
         grid-template-columns: 1fr;
     }
 
@@ -823,7 +898,8 @@ textarea {
         gap: 20px;
     }
 
-    .service-grid {
+    .service-grid,
+    .testimonials-grid {
         grid-template-columns: 1fr;
     }
 
