@@ -485,6 +485,33 @@ main {
     gap: 22px;
 }
 
+.sitemap-section {
+    padding: 40px 0;
+}
+
+.sitemap-links {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 18px;
+}
+
+.sitemap-links a {
+    display: inline-flex;
+    padding: 14px 18px;
+    border-radius: 18px;
+    background: rgba(13, 45, 95, 0.05);
+    color: var(--accent-dark);
+    font-weight: 700;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.sitemap-links a:hover,
+.sitemap-links a:focus-visible {
+    background: rgba(13, 45, 95, 0.12);
+    transform: translateY(-1px);
+}
+
 .faq-card {
     padding: 28px;
     border-radius: 28px;
