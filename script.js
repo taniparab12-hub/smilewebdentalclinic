@@ -31,16 +31,41 @@ const tabPanels = document.querySelectorAll('.tab-panel');
 
 function setActiveTab(tabId) {
     tabButtons.forEach(button => {
-        button.classList.toggle('active', button.dataset.tab === tabId);
+        const isActive = button.dataset.tab === tabId;
+        button.classList.toggle('active', isActive);
+        button.setAttribute('aria-selected', isActive ? 'true' : 'false');
     });
     tabPanels.forEach(panel => {
-        panel.classList.toggle('active', panel.id === tabId);
+        const isActive = panel.id === tabId;
+        panel.classList.toggle('active', isActive);
+        panel.hidden = !isActive;
     });
+}
+
+function activateLocationTabOnNavigation() {
+    if (window.location.hash === '#location') {
+        setActiveTab('info');
+        const locationSection = document.getElementById('location');
+        if (locationSection) {
+            locationSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
 }
 
 tabButtons.forEach(button => {
     button.addEventListener('click', () => setActiveTab(button.dataset.tab));
 });
+
+const locationAnchorLinks = document.querySelectorAll('a[href="#location"]');
+locationAnchorLinks.forEach(link => {
+    link.addEventListener('click', event => {
+        setActiveTab('info');
+        activateLocationTabOnNavigation();
+    });
+});
+
+window.addEventListener('hashchange', activateLocationTabOnNavigation);
+window.addEventListener('load', activateLocationTabOnNavigation);
 
 appointmentForm.addEventListener('submit', e => {
     e.preventDefault();

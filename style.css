@@ -229,6 +229,57 @@ main,
     .social-strip a[href*="instagram.com"] svg,
     .social-strip a[href*="facebook.com"] svg {
         fill: currentColor !important;
+        width: 18px;
+        height: 18px;
+    }
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: 0 20px;
+    font-weight: 700;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.18s ease, background-color 0.18s ease, box-shadow 0.18s ease;
+    white-space: nowrap;
+}
+
+.btn:hover,
+.btn:focus-visible {
+    transform: translateY(-1px);
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: #fff;
+}
+
+.btn-secondary {
+    background: #fff;
+    color: var(--accent-dark);
+    border-color: rgba(13, 45, 95, 0.16);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus-visible {
+    background: rgba(13, 45, 95, 0.08);
+}
+
+.btn-success {
+    background: var(--success);
+    color: #fff;
+    border-color: transparent;
+}
+
+.btn-success:hover,
+.btn-success:focus-visible {
+    background: #1ea857;
 }
 
 .btn-outline {
@@ -516,6 +567,7 @@ main {
 
 .location-section {
     padding: 44px 0;
+    scroll-margin-top: 120px;
 }
 
 .location-content {

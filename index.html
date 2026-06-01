@@ -187,18 +187,20 @@
             </div>
         </section>
 
+        <section class="location-section" id="location">
+            <div class="section-heading">
                 <p class="section-eyebrow">Clinic Location</p>
                 <h2>Find SmileWeb Dental Clinic</h2>
             </div>
 
-            <div class="location-tabs">
-                <button class="tab-btn active" data-tab="info">Info</button>
-                <button class="tab-btn" data-tab="maps">Maps</button>
-                <button class="tab-btn" data-tab="social">Social</button>
+            <div class="location-tabs" role="tablist" aria-label="Location tabs">
+                <button id="tab-info" class="tab-btn active" data-tab="info" role="tab" aria-controls="info" aria-selected="true">Info</button>
+                <button id="tab-maps" class="tab-btn" data-tab="maps" role="tab" aria-controls="maps" aria-selected="false">Maps</button>
+                <button id="tab-social" class="tab-btn" data-tab="social" role="tab" aria-controls="social" aria-selected="false">Social</button>
             </div>
 
             <div class="tab-panels">
-                <div class="tab-panel active" id="info">
+                <div class="tab-panel active" id="info" role="tabpanel" aria-labelledby="tab-info" tabindex="0">
                     <div class="location-content">
                         <div class="location-details">
                             <h3>Clinic Address</h3>
@@ -239,7 +241,7 @@
                     </div>
                 </div>
 
-                <div class="tab-panel" id="maps">
+                <div class="tab-panel" id="maps" role="tabpanel" aria-labelledby="tab-maps" tabindex="0">
                     <div class="maps-container">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1921.2475760746372!2d73.83959502173018!3d15.618599445442424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfeb4d78e7b603%3A0x211676badfcca58e!2sSmileweb%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1780241669642!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
@@ -248,7 +250,7 @@
                     </div>
                 </div>
 
-                <div class="tab-panel" id="social">
+                <div class="tab-panel" id="social" role="tabpanel" aria-labelledby="tab-social" tabindex="0">
                     <div class="social-panel">
                         <div class="social-strip">
                             <a class="social-logo-big" href="https://www.instagram.com/smilewebdentalclinic?igsh=MTQxbjd1bWl0eTNpZg==" target="_blank" rel="noopener" aria-label="Instagram">
